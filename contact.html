@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - CleanDorm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">CleanDorm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services & Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-3" href="signup.html">S'inscrire</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="login.html">Connexion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 pt-5">
+    <h1 class="mb-4 text-primary">Contactez-Nous</h1>
+    <p>Si vous avez des questions, besoin d'aide, ou souhaitez vous abonner, veuillez nous contacter :</p>
+
+    <form id="contactForm" class="mb-5" novalidate>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom Complet *</label>
+        <input type="text" class="form-control" id="name" required />
+        <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Adresse Email *</label>
+        <input type="email" class="form-control" id="email" required />
+        <div class="invalid-feedback">Veuillez entrer un email valide.</div>
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Sujet *</label>
+        <select class="form-select" id="subject" required>
+          <option value="">Choisissez un sujet</option>
+          <option value="information">Demande d'information</option>
+          <option value="pricing">Questions sur les tarifs</option>
+          <option value="service">Problème de service</option>
+          <option value="subscription">Abonnement</option>
+          <option value="other">Autre</option>
+        </select>
+        <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message *</label>
+        <textarea class="form-control" id="message" rows="5" required placeholder="Décrivez votre demande en détail..."></textarea>
+        <div class="invalid-feedback">Veuillez entrer votre message.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+    </form>
+
+    <h3>Coordonnées</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <i class="bi bi-telephone-fill display-4 text-primary mb-3"></i>
+            <h5>Téléphone</h5>
+            <p><a href="tel:+212656305067" class="text-decoration-none">+212 6 56 30 50 67</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <i class="bi bi-envelope-fill display-4 text-primary mb-3"></i>
+            <h5>Email</h5>
+            <p><a href="mailto:info@cleandorm.com" class="text-decoration-none">info@cleandorm.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center h-100">
+          <div class="card-body">
+            <i class="bi bi-geo-alt-fill display-4 text-primary mb-3"></i>
+            <h5>Adresse</h5>
+            <p>Service de Blanchisserie<br>CMC RABAT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h3>Horaires de Service</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-unstyled">
+            <li><strong>Lundi - Vendredi :</strong> 9h00 - 19h00</li>
+            <li><strong>Samedi :</strong> 10h00 - 16h00</li>
+            <li><strong>Dimanche :</strong> 10h00 - 16h00</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <p class="text-muted">
+            <i class="bi bi-info-circle me-2"></i>
+            Service client disponible 7j/7 par email
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white py-4 mt-5">
+    <div class="container text-center small">
+      <p>&copy; 2026 CleanDorm. Aidons les étudiants une lessive à la fois.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

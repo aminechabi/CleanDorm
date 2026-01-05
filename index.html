@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CleanDorm - Service de Blanchisserie pour Étudiants</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">CleanDorm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services & Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-3" href="signup.html">S'inscrire</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="login.html">Connexion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section d-flex align-items-center text-center text-white" style="background: linear-gradient(rgba(10,30,70,0.75), rgba(10,30,70,0.75)), url('https://www.blanchisserie-btl.fr/wp-content/uploads/2019/05/bandeau_blanch.jpg') no-repeat center/cover; height: 90vh;">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Blanchisserie Facile pour Étudiants en Dortoir</h1>
+      <p class="lead mb-4">Lavage, séchage et repassage rapides et abordables directement où vous vivez.</p>
+      <a href="signup.html" class="btn btn-lg btn-primary me-3">S'inscrire Maintenant</a>
+      <a href="services.html" class="btn btn-lg btn-outline-light">Voir Nos Services</a>
+    </div>
+  </header>
+
+  <section id="problem-solution" class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Pourquoi les Étudiants Ont Besoin de Nous</h2>
+        <p>De nombreux étudiants vivant en dortoir ont des difficultés avec des installations de blanchisserie limitées ou inexistantes. Le manque d'espace pour sécher les vêtements et les contraintes de temps en font un énorme tracas quotidien.</p>
+        <ul>
+          <li>Pas de machines à laver dans les chambres de dortoir</li>
+          <li>Espace et temps de séchage limités</li>
+          <li>Horaires chargés et budgets serrés</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="https://www.deco.fr/sites/default/files/styles/1920px/public/2025-01/shutterstock_2559734003.jpg" alt="Problème de blanchisserie" class="img-fluid rounded shadow-sm" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Nos Services Principaux</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm h-100">
+            <i class="bi bi-droplet display-4 text-primary mb-3"></i>
+            <h5>Lavage de Vêtements</h5>
+            <p>Lavage rapide et minutieux avec des détergents écologiques.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm h-100">
+            <i class="bi bi-sun display-4 text-primary mb-3"></i>
+            <h5>Séchage de Vêtements</h5>
+            <p>Solutions de séchage efficaces adaptées aux contraintes des dortoirs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 shadow-sm h-100">
+            <i class="bi bi-sort-alpha-down display-4 text-primary mb-3"></i>
+            <h5>Repassage Optionnel</h5>
+            <p>Complétez votre blanchisserie avec des services de repassage professionnels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="container my-5">
+    <h2 class="text-center mb-4">Tarifs Abordables pour Étudiants</h2>
+    <div class="table-responsive shadow-sm rounded">
+      <table class="table table-striped text-center align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>Type de Vêtement</th>
+            <th>Prix par Article</th>
+            <th>Prix par Kg</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>T-shirts</td><td>25dh</td><td>50dh</td></tr>
+          <tr><td>Pantalons</td><td>35dh</td><td>60dh</td></tr>
+          <tr><td>Jeans</td><td>40dh</td><td>75dh</td></tr>
+          <tr><td>Vestes</td><td>65dh</td><td>100dh</td></tr>
+          <tr><td>Couvertures</td><td>80dh</td><td>120dh</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="subscription-plans" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Plans d'Abonnement</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm p-4 h-100">
+            <h5>Plan Hebdomadaire</h5>
+            <p class="text-muted">Parfait pour les besoins légers de blanchisserie</p>
+            <h3 class="fw-bold">150dh / semaine</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Jusqu'à 5 kg de linge</li>
+              <li>Collecte et livraison incluses</li>
+              <li>Repassage optionnel</li>
+            </ul>
+            <button class="btn btn-primary w-100">S'abonner</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm p-4 h-100">
+            <h5>Plan Mensuel</h5>
+            <p class="text-muted">Meilleure valeur pour la blanchisserie régulière</p>
+            <h3 class="fw-bold">500dh / mois</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Jusqu'à 20 kg de linge</li>
+              <li>Collecte et livraison incluses</li>
+              <li>Service de repassage prioritaire</li>
+            </ul>
+            <button class="btn btn-primary w-100">S'abonner</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white py-4">
+    <div class="container text-center small">
+      <p>&copy; 2026 CleanDorm. Aidons les étudiants une lessive à la fois.</p>
+      <p>Contact: <a href="mailto:info@cleandorm.com" class="text-white">info@cleandorm.com</a> | Téléphone: +212 6 56 30 50 67</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inscription - CleanDorm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="index.html">CleanDorm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Basculer la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services & Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="login.html">Connexion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card shadow-lg border-0">
+          <div class="card-body p-5">
+            <div class="text-center mb-4">
+              <i class="bi bi-droplet-fill text-primary display-4 mb-3"></i>
+              <h2 class="fw-bold">Créer Votre Compte</h2>
+              <p class="text-muted">Rejoignez CleanDorm et simplifiez votre blanchisserie !</p>
+            </div>
+
+            <form id="signupForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">Prénom *</label>
+                  <input type="text" class="form-control" id="firstName" required>
+                  <div class="invalid-feedback">Veuillez entrer votre prénom.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Nom *</label>
+                  <input type="text" class="form-control" id="lastName" required>
+                  <div class="invalid-feedback">Veuillez entrer votre nom.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Adresse Email *</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="phone" class="form-label">Numéro de Téléphone *</label>
+                <input type="tel" class="form-control" id="phone" required>
+                <div class="invalid-feedback">Veuillez entrer votre numéro de téléphone.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="dormitory" class="form-label">Dortoir/Résidence *</label>
+                <select class="form-select" id="dormitory" required>
+                  <option value="">Sélectionnez votre dortoir</option>
+                  <option value="batiment-nord">Bâtiment Nord</option>
+                  <option value="batiment-sud">Bâtiment Sud</option>
+                  <option value="tour-est">Tour Est</option>
+                  <option value="tour-ouest">Tour Ouest</option>
+                  <option value="village-campus">Village Campus</option>
+                  <option value="autre">Autre</option>
+                </select>
+                <div class="invalid-feedback">Veuillez sélectionner votre dortoir.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="roomNumber" class="form-label">Numéro de Chambre *</label>
+                <input type="text" class="form-control" id="roomNumber" placeholder="ex: 204A" required>
+                <div class="invalid-feedback">Veuillez entrer votre numéro de chambre.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Mot de Passe *</label>
+                <input type="password" class="form-control" id="password" minlength="6" required>
+                <div class="invalid-feedback">Le mot de passe doit contenir au moins 6 caractères.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirmer le Mot de Passe *</label>
+                <input type="password" class="form-control" id="confirmPassword" required>
+                <div class="invalid-feedback">Les mots de passe ne correspondent pas.</div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="terms" required>
+                  <label class="form-check-label" for="terms">
+                    J'accepte les <a href="#" class="text-primary">Conditions d'Utilisation</a> et la <a href="#" class="text-primary">Politique de Confidentialité</a> *
+                  </label>
+                  <div class="invalid-feedback">Vous devez accepter les conditions d'utilisation.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="newsletter">
+                  <label class="form-check-label" for="newsletter">
+                    S'abonner à notre newsletter pour les mises à jour et offres spéciales
+                  </label>
+                </div>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-person-plus me-2"></i>Créer le Compte
+                </button>
+              </div>
+            </form>
+
+            <div class="text-center mt-4">
+              <p class="text-muted">Vous avez déjà un compte ? <a href="login.html" class="text-primary fw-semibold">Se Connecter</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white py-4 mt-5">
+    <div class="container text-center small">
+      <p>&copy; 2026 CleanDorm. Aidons les étudiants une lessive à la fois.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      
+      if (password !== confirmPassword) {
+        document.getElementById('confirmPassword').setCustomValidity('Les mots de passe ne correspondent pas');
+      } else {
+        document.getElementById('confirmPassword').setCustomValidity('');
+      }
+      
+      if (this.checkValidity()) {
+        alert('Compte créé avec succès ! Bienvenue chez CleanDorm !');
+        window.location.href = 'login.html';
+      }
+      
+      this.classList.add('was-validated');
+    });
+  </script>
+</body>
+</html>
